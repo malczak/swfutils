@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" viewSourceURL="AbcFlex.mxml" >
+<!-- 
+	abcDump using swfutils example	
+	http://segfaultlabs.com/projects/swfutils
+-->
+	
+	<mx:Model id="linkProvider">
+		<links>
+			<link url="http://segfaultlabs.com/swf/fui.swf" />
+			<link url="http://segfaultlabs.com/swf/abcflex/AbcFlex.swf" />
+		</links>
+	</mx:Model>
+	
+	<mx:Script>
+		<![CDATA[
+			import com.segfaultlabs.swfutils.ABC.ABCCPool;
+			import com.segfaultlabs.swfutils.ABC.ABCParser;
+			import com.segfaultlabs.swfutils.ABC.ABCinfo;
+			import flash.events.Event;
+			import flash.events.IOErrorEvent;
+			import flash.net.URLLoader;
+			import flash.net.URLLoader;
+			import flash.net.URLLoader;
+			import flash.net.URLRequest;
+			import flash.net.URLRequest;
+			import flash.utils.ByteArray;
+			import flash.utils.ByteArray;
+			import flash.events.Event;
+			import mx.controls.Alert;
+			import mx.managers.CursorManager;
+			import mx.managers.PopUpManager;
+			import com.segfaultlabs.swfutils.SWFFile;
+			import com.segfaultlabs.swfutils.SWFTag;
+			import com.segfaultlabs.swfutils.SWFDataInput;
+			import com.segfaultlabs.swfutils.ABC.ABCcodedump;
+			
+			import textAreaLogger;
+		
+			protected function dumpAbcClick(event:Event):void
+			{
+				var req:URLRequest = new URLRequest( urlField.text );
+				var urlData:URLLoader = new URLLoader();
+				urlData.dataFormat = "binary";
+				urlData.addEventListener( Event.COMPLETE, loaded_doABC );
+				urlData.addEventListener( IOErrorEvent.IO_ERROR, ioErrorHandler );
+				urlData.load( req );			
+				logTextArea.text = "";
+				logTextArea.enabled = false;
+				CursorManager.setBusyCursor();
+			};
+			
+			protected function ioErrorHandler( evt:Event ):void
+			{
+				Alert.show("Cannot load file :\r"+urlField.text,"IOError",Alert.OK);
+			};
+			
+			protected function loaded_doABC( evt:Event ):void
+			{	
+				var log:textAreaLogger = new textAreaLogger();
+				var ba:ByteArray =  (evt.target as URLLoader).data as ByteArray;
+				ba.position = 0;
+				var swfr:SWFFile = new SWFFile( ba );
+				var arr:Array;
+					if ( swfr.compressed )
+					{
+						swfr.dataInput = swfr.uncompress();
+						swfr.readHeader();					
+					};
+				log.print( "-------------------- FILE ATTRIBUTES ---------------------" );
+				log.print( "Compressed  ", swfr.compressed );
+				log.print( "Framerate", swfr.framerate );
+				log.print( "Frames count", swfr.framescount );
+				log.print( "Movie rect", swfr.movieRect );
+				log.print( "Version ", swfr.version );
+				log.print( "Use network ", swfr.useNetwork );
+				log.print( "Use AVM2 ", swfr.avm2 );
+					
+				arr = swfr.parseTags();
+					
+				log.print( "-------------------- FILE TAGS ["+arr.length+"] ---------------------" );
+					for ( var key:* in arr )
+						log.print( key, ", type:", SWFTag.tagName(key), "count:",arr[key].length);
+
+				log.print( "-------------------- EXPORTED CLASSES ---------------------" );
+				var exps:Array = swfr.getDefinitions( arr );
+					if ( exps.length > 0 )
+					{
+						log.print(" Document class : ", (exps[0] != null)?exps[0]:"none" );				
+							for ( var idx:* in exps )
+								log.print( " - ", exps[idx] );
+					} else log.print("No exports");
+						
+					if ( swfr.avm2 )
+					{
+						if ( dumpCB.selected )
+						{
+							 if ( arr[82] != null )
+							{
+								var abc:ABCinfo = new ABCinfo();
+								var cpool:ABCCPool = new ABCCPool();
+								var abcparse:ABCParser = new ABCParser();
+								var dump:ABCcodedump = new ABCcodedump();
+								abcparse.readMethodBytes = false;
+								abcparse.readExceptions = false;
+									for ( var j:int = 0; j < arr[82].length; j += 1 )
+									{
+										log.print( "-------------------- DoABC dump #" + j + "---------------------" );
+										log.print(" position : ", arr[82][j].position );
+										swfr.dataInstance.position = arr[82][j].position;
+											try {
+													abcparse.parse( swfr.dataInput as SWFDataInput, abc, cpool, log );
+													dump.dumpABC( abc, log, "->" );
+													abc.dispose();
+												} catch ( e:Error ) 
+											{ 
+												log.print( "  Error  ",e.getStackTrace() );
+											};							
+									};							
+								cpool.dispose();
+							 } else log.print("No DoABC block... ;(");
+						};
+					} else { log.print("AVM1"); };
+				/*
+				var tp:TagParser = new TagParser();
+				tp.readShape( swfr, arr[83][1] );
+				*/
+				arr.splice(0,arr.length);
+				arr = null;						
+				logTextArea.enabled = true;
+				CursorManager.removeBusyCursor();
+			}
+			
+		]]>
+	</mx:Script>
+	
+	<mx:HBox width="100%" height="50">				
+		<mx:VBox horizontalAlign="center" verticalGap="0">
+			<mx:Label text="AbcFlex" color="#00008c" paddingBottom="0" />		
+			<mx:Label text="segfaultlabs.com" color="#000036" paddingTop="0" />		
+		</mx:VBox>
+		
+		<mx:Label text="Url to SWF file"/>
+			<mx:VBox verticalGap="1">
+				<mx:ComboBox dataProvider="{linkProvider.link}" editable="true" id="urlField" labelField="url" width="320" />
+				<mx:CheckBox id="dumpCB" selected="false" label="Dump all ABC code ?" toolTip="This can cause long execution time" />
+			</mx:VBox>
+			<mx:Button label="Parse file" click="dumpAbcClick(event)" />
+	</mx:HBox>
+	
+	<mx:HBox horizontalAlign="center" width="80%" height="100%">
+		<mx:TextArea height="100%" width="100%" id="logTextArea" wordWrap="false" />
+	</mx:HBox>
+	<mx:Label text="this application uses swfutils library, http://segfaultlabs.com/projects/swfutils" width="100%" textAlign="center" color="0xa40000" />
+	
+</mx:Application>

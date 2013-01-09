@@ -1,0 +1,1 @@
+compc -namespace http://segfaultlabs.com/ swfutils-manifest.xml -source-path . -include-namespaces http://segfaultlabs.com/ -output='../bin/swfutils_0_0_3.swc' -define=sflabs::debug,false -target-player=10.0.0

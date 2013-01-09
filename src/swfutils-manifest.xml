@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- 
+ swfutils - Copyright(c) 2006-2008 segfaultlabs.com, Some rights reserved.
+ Your reuse is governed by the Creative Commons Attribution 3.0 United States License
+-->
+<componentPackage>
+	<!-- Core Components -->
+	<component id="SWFFile" class="com.segfaultlabs.swfutils.SWFFile"/>
+	<component id="SWFTag" class="com.segfaultlabs.swfutils.SWFTag"/>
+	<component id="SWFDataInput" class="com.segfaultlabs.swfutils.SWFDataInput"/>
+	<!-- AVM2 Components -->
+	<component id="IABCTraits" class="com.segfaultlabs.swfutils.ABC.IABCTraits"/>
+	<component id="ABCcodedump" class="com.segfaultlabs.swfutils.ABC.ABCcodedump"/>
+	<component id="ABCinfo" class="com.segfaultlabs.swfutils.ABC.ABCinfo"/>
+	<component id="ABCClass" class="com.segfaultlabs.swfutils.ABC.ABCClass"/>
+	<component id="ABCConsts" class="com.segfaultlabs.swfutils.ABC.ABCConsts"/>
+	<component id="ABCCPool" class="com.segfaultlabs.swfutils.ABC.ABCCPool"/>
+	<component id="ABCExceptionInfo" class="com.segfaultlabs.swfutils.ABC.ABCExceptionInfo"/>
+	<component id="ABCInstance" class="com.segfaultlabs.swfutils.ABC.ABCInstance"/>
+	<component id="ABCMetaData" class="com.segfaultlabs.swfutils.ABC.ABCMetaData"/>
+	<component id="ABCMethodBody" class="com.segfaultlabs.swfutils.ABC.ABCMethodBody"/>
+	<component id="ABCMethodInfo" class="com.segfaultlabs.swfutils.ABC.ABCMethodInfo"/>
+	<component id="ABCMultiname" class="com.segfaultlabs.swfutils.ABC.ABCMultiname"/>
+	<component id="ABCParser" class="com.segfaultlabs.swfutils.ABC.ABCParser"/>
+	<component id="ABCTraitConstSlot" class="com.segfaultlabs.swfutils.ABC.ABCTraitConstSlot"/>
+	<!-- AVM1 Components -->
+	<component id="SWFActions" class="com.segfaultlabs.swfutils.avm1.SWFActions"/>
+	<!-- Logging components -->
+	<component id="ILogWriter" class="com.segfaultlabs.swfutils.LogWriter.ILogWriter"/>
+	<component id="NullWriter" class="com.segfaultlabs.swfutils.LogWriter.NullWriter"/>
+	<component id="TraceWriter" class="com.segfaultlabs.swfutils.LogWriter.TraceWriter"/>	
+</componentPackage>

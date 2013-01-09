@@ -1,0 +1,1400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="SWFActions,com.segfaultlabs.swfutils.avm1.SWFActions,ACT_ActionAdd,ACT_ActionAdd2,ACT_ActionAnd,ACT_ActionAsciiToChar,ACT_ActionBitAnd,ACT_ActionBitLShift,ACT_ActionBitOr,ACT_ActionBitRShift,ACT_ActionBitURShift,ACT_ActionBitXor,ACT_ActionCall,ACT_ActionCallFunction,ACT_ActionCallMethod,ACT_ActionCastOp,ACT_ActionCharToAscii,ACT_ActionCloneSprite,ACT_ActionConstantPool,ACT_ActionDecrement,ACT_ActionDefineFunction,ACT_ActionDefineFunction2,ACT_ActionDefineLocal,ACT_ActionDefineLocal2,ACT_ActionDelete,ACT_ActionDelete2,ACT_ActionDivide,ACT_ActionEndDrag,ACT_ActionEnumerate,ACT_ActionEnumerate2,ACT_ActionEquals,ACT_ActionEquals2,ACT_ActionExtends,ACT_ActionGetMember,ACT_ActionGetProperty,ACT_ActionGetTime,ACT_ActionGetURL,ACT_ActionGetURL2,ACT_ActionGetVariable,ACT_ActionGotoFrame,ACT_ActionGotoFrame2,ACT_ActionGotoLabel,ACT_ActionGreater,ACT_ActionIf,ACT_ActionImplementsOp,ACT_ActionIncrement,ACT_ActionInitArray,ACT_ActionInitObject,ACT_ActionInstanceOf,ACT_ActionJump,ACT_ActionLess,ACT_ActionLess2,ACT_ActionMBAsciiToChar,ACT_ActionMBCharToAsci,ACT_ActionMBStringExtract,ACT_ActionMBStringLength,ACT_ActionModulo,ACT_ActionMultiply,ACT_ActionNewMethod,ACT_ActionNewObject,ACT_ActionNextFrame,ACT_ActionNot,ACT_ActionOr,ACT_ActionPlay,ACT_ActionPop,ACT_ActionPreviousFrame,ACT_ActionPush,ACT_ActionPushDuplicate,ACT_ActionRandomNunber,ACT_ActionRemoveSprite,ACT_ActionReturn,ACT_ActionSetMember,ACT_ActionSetProperty,ACT_ActionSetTarget,ACT_ActionSetTarget2,ACT_ActionSetVariable,ACT_ActionStackSwap,ACT_ActionStartDrag,ACT_ActionStop,ACT_ActionStopSound,ACT_ActionStoreRegister,ACT_ActionStrictEquals,ACT_ActionStringAdd,ACT_ActionStringEquals,ACT_ActionStringExtract,ACT_ActionStringGreater,ACT_ActionStringLength,ACT_ActionStringLess,ACT_ActionSubstract,ACT_ActionTargetPath,ACT_ActionThrow,ACT_ActionToInteger,ACT_ActionToNumber,ACT_ActionToString,ACT_ActionToggleQuality,ACT_ActionTrace,ACT_ActionTry,ACT_ActionTypeOf,ACT_ActionWaitForFrame,ACT_ActionWaitForFrame2,ACT_ActionWith,actionName" name="keywords">
+<title>com.segfaultlabs.swfutils.avm1.SWFActions</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'SWFActions - com.segfaultlabs.swfutils';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">swfutils library documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/segfaultlabs/swfutils/avm1/SWFActions.html&amp;com/segfaultlabs/swfutils/avm1/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;SWFActions</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class SWFActions"); titleBar_setSubNav(true,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.segfaultlabs.swfutils.avm1</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class SWFActions</td>
+</tr>
+</table>
+<p></p>
+  This class is usefull when writing Action Script decompiler. It stores  all
+  opcodes used in AVM1. 
+  
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#actionName()">actionName</a>(act:uint):String</div>
+<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionAdd">ACT_ActionAdd</a> : uint = 0xa<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionAdd2">ACT_ActionAdd2</a> : uint = 0x47<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionAnd">ACT_ActionAnd</a> : uint = 0x10<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionAsciiToChar">ACT_ActionAsciiToChar</a> : uint = 0x33<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionBitAnd">ACT_ActionBitAnd</a> : uint = 0x60<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionBitLShift">ACT_ActionBitLShift</a> : uint = 0x63<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionBitOr">ACT_ActionBitOr</a> : uint = 0x61<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionBitRShift">ACT_ActionBitRShift</a> : uint = 0x64<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionBitURShift">ACT_ActionBitURShift</a> : uint = 0x65<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionBitXor">ACT_ActionBitXor</a> : uint = 0x62<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionCall">ACT_ActionCall</a> : uint = 0x9e<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionCallFunction">ACT_ActionCallFunction</a> : uint = 0x3d<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionCallMethod">ACT_ActionCallMethod</a> : uint = 0x52<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionCastOp">ACT_ActionCastOp</a> : uint = 0x2b<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionCharToAscii">ACT_ActionCharToAscii</a> : uint = 0x32<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionCloneSprite">ACT_ActionCloneSprite</a> : uint = 0x24<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionConstantPool">ACT_ActionConstantPool</a> : uint = 0x88<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionDecrement">ACT_ActionDecrement</a> : uint = 0x51<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionDefineFunction">ACT_ActionDefineFunction</a> : uint = 0x9b<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionDefineFunction2">ACT_ActionDefineFunction2</a> : uint = 0x8e<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionDefineLocal">ACT_ActionDefineLocal</a> : uint = 0x3c<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionDefineLocal2">ACT_ActionDefineLocal2</a> : uint = 0x41<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionDelete">ACT_ActionDelete</a> : uint = 0x3a<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionDelete2">ACT_ActionDelete2</a> : uint = 0x3b<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionDivide">ACT_ActionDivide</a> : uint = 0xd<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionEndDrag">ACT_ActionEndDrag</a> : uint = 0x28<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionEnumerate">ACT_ActionEnumerate</a> : uint = 0x46<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionEnumerate2">ACT_ActionEnumerate2</a> : uint = 0x55<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionEquals">ACT_ActionEquals</a> : uint = 0xe<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionEquals2">ACT_ActionEquals2</a> : uint = 0x49<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionExtends">ACT_ActionExtends</a> : uint = 0x69<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGetMember">ACT_ActionGetMember</a> : uint = 0x4e<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGetProperty">ACT_ActionGetProperty</a> : uint = 0x22<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGetTime">ACT_ActionGetTime</a> : uint = 0x34<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGetURL">ACT_ActionGetURL</a> : uint = 0x83<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGetURL2">ACT_ActionGetURL2</a> : uint = 0x9a<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGetVariable">ACT_ActionGetVariable</a> : uint = 0x1c<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGotoFrame">ACT_ActionGotoFrame</a> : uint = 0x81<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGotoFrame2">ACT_ActionGotoFrame2</a> : uint = 0x9f<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGotoLabel">ACT_ActionGotoLabel</a> : uint = 0x8c<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionGreater">ACT_ActionGreater</a> : uint = 0x67<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionIf">ACT_ActionIf</a> : uint = 0x9d<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionImplementsOp">ACT_ActionImplementsOp</a> : uint = 0x2c<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionIncrement">ACT_ActionIncrement</a> : uint = 0x50<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionInitArray">ACT_ActionInitArray</a> : uint = 0x42<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionInitObject">ACT_ActionInitObject</a> : uint = 0x43<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionInstanceOf">ACT_ActionInstanceOf</a> : uint = 0x54<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionJump">ACT_ActionJump</a> : uint = 0x99<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionLess">ACT_ActionLess</a> : uint = 0xf<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionLess2">ACT_ActionLess2</a> : uint = 0x48<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionMBAsciiToChar">ACT_ActionMBAsciiToChar</a> : uint = 0x37<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionMBCharToAsci">ACT_ActionMBCharToAsci</a> : uint = 0x36<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionMBStringExtract">ACT_ActionMBStringExtract</a> : uint = 0x35<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionMBStringLength">ACT_ActionMBStringLength</a> : uint = 0x31<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionModulo">ACT_ActionModulo</a> : uint = 0x3f<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionMultiply">ACT_ActionMultiply</a> : uint = 0xc<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionNewMethod">ACT_ActionNewMethod</a> : uint = 0x53<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionNewObject">ACT_ActionNewObject</a> : uint = 0x40<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionNextFrame">ACT_ActionNextFrame</a> : uint = 0x4<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionNot">ACT_ActionNot</a> : uint = 0x12<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionOr">ACT_ActionOr</a> : uint = 0x11<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionPlay">ACT_ActionPlay</a> : uint = 0x6<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionPop">ACT_ActionPop</a> : uint = 0x17<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionPreviousFrame">ACT_ActionPreviousFrame</a> : uint = 0x5<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionPush">ACT_ActionPush</a> : uint = 0x96<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionPushDuplicate">ACT_ActionPushDuplicate</a> : uint = 0x4c<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionRandomNunber">ACT_ActionRandomNunber</a> : uint = 0x30<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionRemoveSprite">ACT_ActionRemoveSprite</a> : uint = 0x25<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionReturn">ACT_ActionReturn</a> : uint = 0x3e<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionSetMember">ACT_ActionSetMember</a> : uint = 0x4f<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionSetProperty">ACT_ActionSetProperty</a> : uint = 0x23<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionSetTarget">ACT_ActionSetTarget</a> : uint = 0x8b<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionSetTarget2">ACT_ActionSetTarget2</a> : uint = 0x20<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionSetVariable">ACT_ActionSetVariable</a> : uint = 0x1d<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStackSwap">ACT_ActionStackSwap</a> : uint = 0x4d<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStartDrag">ACT_ActionStartDrag</a> : uint = 0x27<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStop">ACT_ActionStop</a> : uint = 0x7<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStopSound">ACT_ActionStopSound</a> : uint = 0x9<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStoreRegister">ACT_ActionStoreRegister</a> : uint = 0x87<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStrictEquals">ACT_ActionStrictEquals</a> : uint = 0x66<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStringAdd">ACT_ActionStringAdd</a> : uint = 0x21<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStringEquals">ACT_ActionStringEquals</a> : uint = 0x13<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStringExtract">ACT_ActionStringExtract</a> : uint = 0x15<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStringGreater">ACT_ActionStringGreater</a> : uint = 0x68<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStringLength">ACT_ActionStringLength</a> : uint = 0x14<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionStringLess">ACT_ActionStringLess</a> : uint = 0x29<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionSubstract">ACT_ActionSubstract</a> : uint = 0xb<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionTargetPath">ACT_ActionTargetPath</a> : uint = 0x45<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionThrow">ACT_ActionThrow</a> : uint = 0x2a<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionToggleQuality">ACT_ActionToggleQuality</a> : uint = 0x8<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionToInteger">ACT_ActionToInteger</a> : uint = 0x18<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionToNumber">ACT_ActionToNumber</a> : uint = 0x4a<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionToString">ACT_ActionToString</a> : uint = 0x4b<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionTrace">ACT_ActionTrace</a> : uint = 0x26<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionTry">ACT_ActionTry</a> : uint = 0x8f<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionTypeOf">ACT_ActionTypeOf</a> : uint = 0x44<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionWaitForFrame">ACT_ActionWaitForFrame</a> : uint = 0x8a<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionWaitForFrame2">ACT_ActionWaitForFrame2</a> : uint = 0x8d<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ACT_ActionWith">ACT_ActionWith</a> : uint = 0x94<div class="summaryTableDescription">[static]</div>
+</td><td class="summaryTableOwnerCol">SWFActions</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="actionName()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">actionName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function actionName(act:uint):String</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">act</span>:uint</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code></td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="ACT_ActionAdd"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionAdd</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionAdd:uint = 0xa</code>
+</div>
+<a name="ACT_ActionAdd2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionAdd2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionAdd2:uint = 0x47</code>
+</div>
+<a name="ACT_ActionAnd"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionAnd</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionAnd:uint = 0x10</code>
+</div>
+<a name="ACT_ActionAsciiToChar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionAsciiToChar</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionAsciiToChar:uint = 0x33</code>
+</div>
+<a name="ACT_ActionBitAnd"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionBitAnd</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionBitAnd:uint = 0x60</code>
+</div>
+<a name="ACT_ActionBitLShift"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionBitLShift</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionBitLShift:uint = 0x63</code>
+</div>
+<a name="ACT_ActionBitOr"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionBitOr</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionBitOr:uint = 0x61</code>
+</div>
+<a name="ACT_ActionBitRShift"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionBitRShift</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionBitRShift:uint = 0x64</code>
+</div>
+<a name="ACT_ActionBitURShift"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionBitURShift</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionBitURShift:uint = 0x65</code>
+</div>
+<a name="ACT_ActionBitXor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionBitXor</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionBitXor:uint = 0x62</code>
+</div>
+<a name="ACT_ActionCall"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionCall</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionCall:uint = 0x9e</code>
+</div>
+<a name="ACT_ActionCallFunction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionCallFunction</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionCallFunction:uint = 0x3d</code>
+</div>
+<a name="ACT_ActionCallMethod"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionCallMethod</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionCallMethod:uint = 0x52</code>
+</div>
+<a name="ACT_ActionCastOp"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionCastOp</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionCastOp:uint = 0x2b</code>
+</div>
+<a name="ACT_ActionCharToAscii"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionCharToAscii</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionCharToAscii:uint = 0x32</code>
+</div>
+<a name="ACT_ActionCloneSprite"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionCloneSprite</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionCloneSprite:uint = 0x24</code>
+</div>
+<a name="ACT_ActionConstantPool"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionConstantPool</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionConstantPool:uint = 0x88</code>
+</div>
+<a name="ACT_ActionDecrement"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionDecrement</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionDecrement:uint = 0x51</code>
+</div>
+<a name="ACT_ActionDefineFunction"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionDefineFunction</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionDefineFunction:uint = 0x9b</code>
+</div>
+<a name="ACT_ActionDefineFunction2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionDefineFunction2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionDefineFunction2:uint = 0x8e</code>
+</div>
+<a name="ACT_ActionDefineLocal"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionDefineLocal</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionDefineLocal:uint = 0x3c</code>
+</div>
+<a name="ACT_ActionDefineLocal2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionDefineLocal2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionDefineLocal2:uint = 0x41</code>
+</div>
+<a name="ACT_ActionDelete"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionDelete</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionDelete:uint = 0x3a</code>
+</div>
+<a name="ACT_ActionDelete2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionDelete2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionDelete2:uint = 0x3b</code>
+</div>
+<a name="ACT_ActionDivide"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionDivide</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionDivide:uint = 0xd</code>
+</div>
+<a name="ACT_ActionEndDrag"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionEndDrag</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionEndDrag:uint = 0x28</code>
+</div>
+<a name="ACT_ActionEnumerate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionEnumerate</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionEnumerate:uint = 0x46</code>
+</div>
+<a name="ACT_ActionEnumerate2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionEnumerate2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionEnumerate2:uint = 0x55</code>
+</div>
+<a name="ACT_ActionEquals"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionEquals</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionEquals:uint = 0xe</code>
+</div>
+<a name="ACT_ActionEquals2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionEquals2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionEquals2:uint = 0x49</code>
+</div>
+<a name="ACT_ActionExtends"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionExtends</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionExtends:uint = 0x69</code>
+</div>
+<a name="ACT_ActionGetMember"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGetMember</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGetMember:uint = 0x4e</code>
+</div>
+<a name="ACT_ActionGetProperty"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGetProperty</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGetProperty:uint = 0x22</code>
+</div>
+<a name="ACT_ActionGetTime"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGetTime</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGetTime:uint = 0x34</code>
+</div>
+<a name="ACT_ActionGetURL"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGetURL</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGetURL:uint = 0x83</code>
+</div>
+<a name="ACT_ActionGetURL2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGetURL2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGetURL2:uint = 0x9a</code>
+</div>
+<a name="ACT_ActionGetVariable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGetVariable</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGetVariable:uint = 0x1c</code>
+</div>
+<a name="ACT_ActionGotoFrame"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGotoFrame</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGotoFrame:uint = 0x81</code>
+</div>
+<a name="ACT_ActionGotoFrame2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGotoFrame2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGotoFrame2:uint = 0x9f</code>
+</div>
+<a name="ACT_ActionGotoLabel"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGotoLabel</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGotoLabel:uint = 0x8c</code>
+</div>
+<a name="ACT_ActionGreater"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionGreater</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionGreater:uint = 0x67</code>
+</div>
+<a name="ACT_ActionIf"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionIf</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionIf:uint = 0x9d</code>
+</div>
+<a name="ACT_ActionImplementsOp"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionImplementsOp</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionImplementsOp:uint = 0x2c</code>
+</div>
+<a name="ACT_ActionIncrement"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionIncrement</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionIncrement:uint = 0x50</code>
+</div>
+<a name="ACT_ActionInitArray"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionInitArray</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionInitArray:uint = 0x42</code>
+</div>
+<a name="ACT_ActionInitObject"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionInitObject</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionInitObject:uint = 0x43</code>
+</div>
+<a name="ACT_ActionInstanceOf"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionInstanceOf</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionInstanceOf:uint = 0x54</code>
+</div>
+<a name="ACT_ActionJump"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionJump</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionJump:uint = 0x99</code>
+</div>
+<a name="ACT_ActionLess"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionLess</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionLess:uint = 0xf</code>
+</div>
+<a name="ACT_ActionLess2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionLess2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionLess2:uint = 0x48</code>
+</div>
+<a name="ACT_ActionMBAsciiToChar"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionMBAsciiToChar</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionMBAsciiToChar:uint = 0x37</code>
+</div>
+<a name="ACT_ActionMBCharToAsci"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionMBCharToAsci</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionMBCharToAsci:uint = 0x36</code>
+</div>
+<a name="ACT_ActionMBStringExtract"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionMBStringExtract</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionMBStringExtract:uint = 0x35</code>
+</div>
+<a name="ACT_ActionMBStringLength"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionMBStringLength</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionMBStringLength:uint = 0x31</code>
+</div>
+<a name="ACT_ActionModulo"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionModulo</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionModulo:uint = 0x3f</code>
+</div>
+<a name="ACT_ActionMultiply"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionMultiply</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionMultiply:uint = 0xc</code>
+</div>
+<a name="ACT_ActionNewMethod"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionNewMethod</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionNewMethod:uint = 0x53</code>
+</div>
+<a name="ACT_ActionNewObject"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionNewObject</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionNewObject:uint = 0x40</code>
+</div>
+<a name="ACT_ActionNextFrame"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionNextFrame</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionNextFrame:uint = 0x4</code>
+</div>
+<a name="ACT_ActionNot"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionNot</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionNot:uint = 0x12</code>
+</div>
+<a name="ACT_ActionOr"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionOr</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionOr:uint = 0x11</code>
+</div>
+<a name="ACT_ActionPlay"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionPlay</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionPlay:uint = 0x6</code>
+</div>
+<a name="ACT_ActionPop"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionPop</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionPop:uint = 0x17</code>
+</div>
+<a name="ACT_ActionPreviousFrame"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionPreviousFrame</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionPreviousFrame:uint = 0x5</code>
+</div>
+<a name="ACT_ActionPush"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionPush</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionPush:uint = 0x96</code>
+</div>
+<a name="ACT_ActionPushDuplicate"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionPushDuplicate</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionPushDuplicate:uint = 0x4c</code>
+</div>
+<a name="ACT_ActionRandomNunber"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionRandomNunber</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionRandomNunber:uint = 0x30</code>
+</div>
+<a name="ACT_ActionRemoveSprite"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionRemoveSprite</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionRemoveSprite:uint = 0x25</code>
+</div>
+<a name="ACT_ActionReturn"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionReturn</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionReturn:uint = 0x3e</code>
+</div>
+<a name="ACT_ActionSetMember"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionSetMember</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionSetMember:uint = 0x4f</code>
+</div>
+<a name="ACT_ActionSetProperty"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionSetProperty</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionSetProperty:uint = 0x23</code>
+</div>
+<a name="ACT_ActionSetTarget"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionSetTarget</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionSetTarget:uint = 0x8b</code>
+</div>
+<a name="ACT_ActionSetTarget2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionSetTarget2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionSetTarget2:uint = 0x20</code>
+</div>
+<a name="ACT_ActionSetVariable"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionSetVariable</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionSetVariable:uint = 0x1d</code>
+</div>
+<a name="ACT_ActionStackSwap"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStackSwap</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStackSwap:uint = 0x4d</code>
+</div>
+<a name="ACT_ActionStartDrag"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStartDrag</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStartDrag:uint = 0x27</code>
+</div>
+<a name="ACT_ActionStop"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStop</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStop:uint = 0x7</code>
+</div>
+<a name="ACT_ActionStopSound"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStopSound</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStopSound:uint = 0x9</code>
+</div>
+<a name="ACT_ActionStoreRegister"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStoreRegister</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStoreRegister:uint = 0x87</code>
+</div>
+<a name="ACT_ActionStrictEquals"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStrictEquals</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStrictEquals:uint = 0x66</code>
+</div>
+<a name="ACT_ActionStringAdd"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStringAdd</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStringAdd:uint = 0x21</code>
+</div>
+<a name="ACT_ActionStringEquals"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStringEquals</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStringEquals:uint = 0x13</code>
+</div>
+<a name="ACT_ActionStringExtract"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStringExtract</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStringExtract:uint = 0x15</code>
+</div>
+<a name="ACT_ActionStringGreater"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStringGreater</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStringGreater:uint = 0x68</code>
+</div>
+<a name="ACT_ActionStringLength"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStringLength</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStringLength:uint = 0x14</code>
+</div>
+<a name="ACT_ActionStringLess"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionStringLess</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionStringLess:uint = 0x29</code>
+</div>
+<a name="ACT_ActionSubstract"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionSubstract</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionSubstract:uint = 0xb</code>
+</div>
+<a name="ACT_ActionTargetPath"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionTargetPath</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionTargetPath:uint = 0x45</code>
+</div>
+<a name="ACT_ActionThrow"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionThrow</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionThrow:uint = 0x2a</code>
+</div>
+<a name="ACT_ActionToggleQuality"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionToggleQuality</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionToggleQuality:uint = 0x8</code>
+</div>
+<a name="ACT_ActionToInteger"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionToInteger</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionToInteger:uint = 0x18</code>
+</div>
+<a name="ACT_ActionToNumber"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionToNumber</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionToNumber:uint = 0x4a</code>
+</div>
+<a name="ACT_ActionToString"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionToString</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionToString:uint = 0x4b</code>
+</div>
+<a name="ACT_ActionTrace"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionTrace</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionTrace:uint = 0x26</code>
+</div>
+<a name="ACT_ActionTry"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionTry</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionTry:uint = 0x8f</code>
+</div>
+<a name="ACT_ActionTypeOf"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionTypeOf</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionTypeOf:uint = 0x44</code>
+</div>
+<a name="ACT_ActionWaitForFrame"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionWaitForFrame</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionWaitForFrame:uint = 0x8a</code>
+</div>
+<a name="ACT_ActionWaitForFrame2"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionWaitForFrame2</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionWaitForFrame2:uint = 0x8d</code>
+</div>
+<a name="ACT_ActionWith"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ACT_ActionWith</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ACT_ActionWith:uint = 0x94</code>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright">http://segfaultlabs.com/projects/swfutils</center>
+</div>
+</body>
+</html>
+<!--http://segfaultlabs.com/projects/swfutils-->

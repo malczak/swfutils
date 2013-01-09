@@ -1,0 +1,10 @@
+ 
+ This is a SWFUtils ActionScript 3 library package
+ For latest version check our public svn repository
+  	  http://svn.segfaultlabs.com/swfutils
+
+ Code main author is : Mateusz Malczak (http://segfaultlabs.com ).
+ 
+ Some parts of this library are based on code from Tamarin project
+ (http://www.mozilla.org/projects/tamarin/). Specific informations
+ are placed in source files.
